@@ -2,7 +2,7 @@ pragma solidity ^0.4.16;
 
 interface tokenRecipient { function receiveApproval(address _from, uint256 _value, address _token, bytes _extraData) public; }
 
-contract DEXTools {
+contract BTCTools {
     // Public variables of the token
     string public name;
     string public symbol;
@@ -25,16 +25,16 @@ contract DEXTools {
      *
      * Initializes contract with initial supply tokens to the creator of the contract
      */
-    function DEXTools(
+    function BTCTools(
         uint256 initialSupply,
         string tokenName,
         string tokenSymbol
     ) public {
-        initialSupply = 200000000;
+        initialSupply = 4000000;
         totalSupply = initialSupply * 10 ** uint256(decimals);  // Update total supply with the decimal amount
         balanceOf[msg.sender] = totalSupply;                // Give the creator all initial tokens
-        name = tokenName = "DEXTools";                                   // Set the name for display purposes
-        symbol = tokenSymbol= "DEXT";                               // Set the symbol for display purposes
+        name = tokenName = "BTCTools Token";                                   // Set the name for display purposes
+        symbol = tokenSymbol= "BtcTools";                               // Set the symbol for display purposes
     }
 
     /**
