@@ -1,1 +1,1 @@
-Smart Contract for Dextools
+Smart Contract for BTCTOOLS TOKEN
